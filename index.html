@@ -33,7 +33,7 @@
             <a class="nav-link" href="#services-overview">Services-overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
@@ -66,8 +66,8 @@
   </div>
 </nav>
 
-<div id="services-overview" class="py-5">
-  <div class=" p-5 container w-100 h-100 bg-white d-flex align-items-center justify-content-center flex-column gap-3 ">
+<div id="services-overview" class="w-100 h-100 py-5 mt-3 row  ">
+  <div class=" p-5 container  d-flex align-items-center justify-content-center flex-column gap-3 ">
   <h1 class="border border-dark d-inline  p-2">Das Zuhause</h1>
   <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.  impedit fugiat ipsa ratione fugit repellendus aliquid pariatur obcaecati!</p>
     <button class="btn btn-dark fw-bold p-2 "><a class="text-decoration-none text-white" href="#products">
@@ -78,7 +78,61 @@
   </div>
 </div>
 
-<div id="products">
+<div id="products" class="bg-dark p-4 mb-3 ">
+  <div class="container">
+    <h2 class="text-white">Products</h2>
+  </div>
+  <div class="d-flex flex-row align-content-center justify-content-around">
+    
+    <div class="col-md-4 hovercrads">
+      <div class="card p-3" style="width: 18rem;">
+  <img src="./slide-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5>Headphone</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Price: $8</p>
+    <button class="btn btn-dark w-10 m-auto">buy</button>
+  </div>
+</div>
+    </div>
+
+    <div class="col-md-4 hovercrads">
+      <div class="card p-3" style="width: 18rem;">
+  <img src="./slide-3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5>watch</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Price: $8</p>
+    <button class="btn btn-dark w-10 m-auto">buy</button>
+  </div>
+</div>
+    </div>
+
+    
+    <div class="col-md-4 hovercrads">
+      <div class="card p-3" style="width: 18rem;">
+  <img src="./slide-2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5>Honk</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Price: $9</p>
+    <button class="btn btn-dark w-10 m-auto">buy</button>
+  </div>
+</div>
+  </div>
+  
+
+    </div>
+
+    
+
+   
+
+   
+
+   
+  </div>
+
 
 </div>
 
@@ -144,11 +198,36 @@
 
 </div>
 
-<section id="contact" class="contact">
 
+<section id="contact" class="contact p-5 bg-svg1 ">
+  <div class="container text-white ">
+    <h2 class="fw-bold">Contact Us</h2>
+  </div>
+  <p class="text-white fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ea dicta praesentium totam quod accusantium odit saepe corrupti, impedit porro voluptatibus, eaque perferendis amet autem. Inventore nulla fuga minus minima!</p>
+  
+  <div class="container pt-5">
+
+    <form action="mail.php" method="POST" id="contact-form" name="contact-form">
+      <fieldset disabled>
+    <legend class="fw-bold text-white">Contact</legend>
+   <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+    <button type="submit" class="btn btn-dark">Send</button>
+  </fieldset>
+      
+    </form>
+
+  </div>  
 </section>
 
-<footer>
+<footer class="">
   
 </footer>
 
@@ -171,6 +250,20 @@
  .svgs  svg{
     width: 100%;
     height: 12.5em;
+  }
+  .bg-svg1{
+    background: url(./layered-waves-haikei.svg);
+    background-size: cover;
+    width: 100%;
+  }
+  .bg-header{
+    background: url(./header.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .hovercrads{transition: .6s ease;}
+  .hovercrads:hover{
+    transform: scale(1.1);
   }
 </style>
 
